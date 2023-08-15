@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Budget Tracker</h1>
+    </header>
+    <main>
+        <section id="income">
+            <h2>Income</h2>
+            <form id="income-form">
+                <label for="income-description">Description:</label>
+                <input type="text" id="income-description" required>
+
+                <label for="income-amount">Amount:</label>
+                <input type="number" id="income-amount" required>
+
+                <button type="submit">Add Income</button>
+            </form>
+            <ul id="income-list"></ul>
+        </section>
+
+        <section id="expenses">
+            <h2>Expenses</h2>
+            <form id="expense-form">
+                <label for="expense-description">Description:</label>
+                <input type="text" id="expense-description" required>
+
+                <label for="expense-amount">Amount:</label>
+                <input type="number" id="expense-amount" required>
+
+                <button type="submit">Add Expense</button>
+            </form>
+            <ul id="expense-list"></ul>
+        </section>
+
+        <section id="budget-overview">
+            <h2>Budget Overview</h2>
+            <div id="total-income">Total Income: &#162;0</div>
+            <div id="total-expenses">Total Expenses: &#162;0</div>
+            <div id="remaining-budget">Remaining Budget: &#162;0</div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
